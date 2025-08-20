@@ -1,6 +1,148 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aerospace Human-Centered Designer — Portfolio</title>
+    <meta name="description" content="Portfolio of a human-centered designer working in aerospace and complex systems." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+            colors: { brand: { 600: '#0b6fe6', 700: '#0a59ba' } }
+          }
+        }
+      }
+    </script>
+    <style>
+      :focus-visible { outline: 2px solid #0b6fe6; outline-offset: 2px; }
+    </style>
+  </head>
+  <body class="bg-white text-slate-900 antialiased">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:bg-white focus:px-3 focus:py-2 focus:rounded">Skip to content</a>
+    <header class="border-b border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <span class="inline-grid place-items-center h-9 w-9 rounded bg-brand-600 text-white font-bold">A</span>
+          <div>
+            <h1 class="text-base font-semibold">Aerospace HCD</h1>
+            <p class="text-sm text-slate-600">Human-centered designer</p>
+          </div>
+        </div>
+        <nav aria-label="Primary" class="hidden sm:block">
+          <ul class="flex items-center gap-6 text-sm">
+            <li><a href="#projects" class="hover:text-brand-700">Projects</a></li>
+            <li><a href="#resume" class="hover:text-brand-700">Resume</a></li>
+            <li><a href="#contact" class="hover:text-brand-700">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="bg-gradient-to-br from-slate-50 to-white">
+        <div class="max-w-6xl mx-auto px-4 py-16 sm:py-24">
+          <div class="max-w-3xl">
+            <h2 class="text-4xl sm:text-5xl font-bold tracking-tight">Designing clarity for aerospace and complex systems</h2>
+            <p class="mt-6 text-lg text-slate-700">I craft interfaces and services that help operators make confident decisions in high‑stakes environments.</p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="#projects" class="inline-flex items-center rounded bg-brand-600 px-4 py-2 text-white hover:bg-brand-700">View projects</a>
+              <a href="#contact" class="inline-flex items-center rounded border border-slate-300 px-4 py-2 hover:border-brand-600 hover:text-brand-700">Get in touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="max-w-6xl mx-auto px-4 py-16">
+        <div class="flex items-end justify-between">
+          <h3 class="text-2xl font-semibold">Projects</h3>
+          <span class="text-sm text-slate-600">Placeholder content you can replace</span>
+        </div>
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article class="group rounded-lg border border-slate-200 overflow-hidden bg-white">
+            <img src="https://placehold.co/800x500/png?text=Flight+Deck+Aid" alt="Placeholder project visual" class="h-44 w-full object-cover" />
+            <div class="p-5">
+              <h4 class="text-lg font-semibold group-hover:text-brand-700">Flight Deck Decision Aid</h4>
+              <p class="mt-2 text-sm text-slate-600">Reducing cognitive load for pilots during abnormal procedures.</p>
+            </div>
+          </article>
+          <article class="group rounded-lg border border-slate-200 overflow-hidden bg-white">
+            <img src="https://placehold.co/800x500/png?text=Mission+Planner" alt="Placeholder project visual" class="h-44 w-full object-cover" />
+            <div class="p-5">
+              <h4 class="text-lg font-semibold group-hover:text-brand-700">Mission Planner</h4>
+              <p class="mt-2 text-sm text-slate-600">Human-in-the-loop planning for autonomous systems.</p>
+            </div>
+          </article>
+          <article class="group rounded-lg border border-slate-200 overflow-hidden bg-white">
+            <img src="https://placehold.co/800x500/png?text=Ops+Dashboard" alt="Placeholder project visual" class="h-44 w-full object-cover" />
+            <div class="p-5">
+              <h4 class="text-lg font-semibold group-hover:text-brand-700">Operations Dashboard</h4>
+              <p class="mt-2 text-sm text-slate-600">Status at‑a‑glance across distributed assets.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="resume" class="max-w-6xl mx-auto px-4 py-16">
+        <h3 class="text-2xl font-semibold">Resume</h3>
+        <div class="mt-6 grid gap-6 md:grid-cols-2">
+          <div>
+            <h4 class="font-semibold">Experience</h4>
+            <ul class="mt-3 space-y-2 text-slate-700">
+              <li>Lead UX Designer — AeroTech Systems (2023 — Present)</li>
+              <li>Design Researcher — Orbital Ops (2021 — 2023)</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold">Skills</h4>
+            <ul class="mt-3 grid grid-cols-2 gap-2 text-slate-700">
+              <li>Design research</li>
+              <li>Interaction design</li>
+              <li>Prototyping</li>
+              <li>Accessibility</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="max-w-6xl mx-auto px-4 py-16">
+        <h3 class="text-2xl font-semibold">Contact</h3>
+        <form class="mt-6 max-w-xl space-y-4" onsubmit="event.preventDefault()">
+          <div>
+            <label for="name" class="block text-sm font-medium">Name</label>
+            <input id="name" name="name" type="text" required class="mt-1 w-full rounded border border-slate-300 px-3 py-2" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium">Email</label>
+            <input id="email" name="email" type="email" required class="mt-1 w-full rounded border border-slate-300 px-3 py-2" />
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium">Message</label>
+            <textarea id="message" name="message" rows="5" required class="mt-1 w-full rounded border border-slate-300 px-3 py-2"></textarea>
+          </div>
+          <button type="submit" class="inline-flex items-center rounded bg-brand-600 px-4 py-2 text-white hover:bg-brand-700">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-slate-600 flex items-center justify-between">
+        <span>&copy; <span id="y"></span> Aerospace Human-Centered Designer</span>
+        <a href="mailto:designer@example.com" class="hover:text-brand-700">designer@example.com</a>
+      </div>
+    </footer>
+    <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+  </body>
+  </html>
+
+<!doctype html>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
