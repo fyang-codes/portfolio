@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Minimalist</title>
+    <meta name="description" content="Personal portfolio — minimalist creative." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter','system-ui','sans-serif'] }, colors: { ink: '#0f172a', sand: '#f8fafc' } } } }
+    </script>
+    <style>
+      :root { --r: 12px }
+      .ringy { box-shadow: 0 0 0 1px rgba(2,6,23,0.08), 0 2px 16px rgba(2,6,23,0.06) }
+      :focus-visible { outline: 2px dashed #0f172a; outline-offset: 4px }
+    </style>
+  </head>
+  <body class="bg-sand text-ink antialiased">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:bg-white focus:px-3 focus:py-2 focus:rounded">Skip</a>
+
+    <header class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="h-8 w-8 rounded-[var(--r)] bg-black text-white grid place-items-center text-sm font-semibold">F</div>
+        <span class="text-sm text-slate-600">Designer • Researcher</span>
+      </div>
+      <nav class="hidden sm:block" aria-label="Primary">
+        <ul class="flex gap-6 text-sm">
+          <li><a href="#projects" class="hover:underline">Work</a></li>
+          <li><a href="#resume" class="hover:underline">Resume</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="max-w-6xl mx-auto px-6 py-16 sm:py-24">
+        <div class="grid md:grid-cols-12 gap-8 items-end">
+          <div class="md:col-span-7">
+            <h1 class="text-4xl sm:text-6xl font-semibold leading-tight">
+              I design calm systems and thoughtful tools
+            </h1>
+            <p class="mt-6 text-lg text-slate-700 max-w-xl">
+              Blending research, interaction design, and systems thinking to create humane products.
+            </p>
+            <div class="mt-8 flex gap-3">
+              <a href="#projects" class="inline-flex items-center rounded-[var(--r)] bg-black text-white px-4 py-2">View work</a>
+              <a href="#contact" class="inline-flex items-center rounded-[var(--r)] ringy bg-white px-4 py-2">Get in touch</a>
+            </div>
+          </div>
+          <div class="md:col-span-5 grid grid-cols-2 gap-3">
+            <div class="aspect-[4/5] rounded-[var(--r)] ringy bg-white"></div>
+            <div class="aspect-[4/5] rounded-[var(--r)] ringy bg-white translate-y-6"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
+        <h2 class="text-2xl font-semibold">Projects</h2>
+        <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article class="rounded-[var(--r)] ringy bg-white p-5">
+            <h3 class="font-semibold">Insight Hub</h3>
+            <p class="mt-2 text-sm text-slate-700">A lightweight repository to connect research and roadmap.</p>
+          </article>
+          <article class="rounded-[var(--r)] ringy bg-white p-5">
+            <h3 class="font-semibold">Flow Studio</h3>
+            <p class="mt-2 text-sm text-slate-700">Prototype suite for complex interaction patterns.</p>
+          </article>
+          <article class="rounded-[var(--r)] ringy bg-white p-5">
+            <h3 class="font-semibold">Ops Overview</h3>
+            <p class="mt-2 text-sm text-slate-700">Visualizing operational states in real‑time.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="resume" class="max-w-6xl mx-auto px-6 py-16">
+        <h2 class="text-2xl font-semibold">Resume</h2>
+        <div class="mt-6 grid md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="font-semibold">Experience</h3>
+            <ul class="mt-3 space-y-2 text-slate-700">
+              <li>Lead UX Designer — 2023 — Present</li>
+              <li>Design Researcher — 2021 — 2023</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold">Skills</h3>
+            <ul class="mt-3 grid grid-cols-2 gap-2 text-slate-700">
+              <li>Discovery research</li>
+              <li>Interaction design</li>
+              <li>Rapid prototyping</li>
+              <li>Accessibility</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="max-w-6xl mx-auto px-6 py-16">
+        <h2 class="text-2xl font-semibold">Contact</h2>
+        <form class="mt-6 max-w-xl space-y-4" onsubmit="event.preventDefault()">
+          <div>
+            <label for="name" class="block text-sm font-medium">Name</label>
+            <input id="name" name="name" type="text" required class="mt-1 w-full rounded-[var(--r)] border border-slate-300 px-3 py-2" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium">Email</label>
+            <input id="email" name="email" type="email" required class="mt-1 w-full rounded-[var(--r)] border border-slate-300 px-3 py-2" />
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium">Message</label>
+            <textarea id="message" name="message" rows="5" required class="mt-1 w-full rounded-[var(--r)] border border-slate-300 px-3 py-2"></textarea>
+          </div>
+          <button type="submit" class="inline-flex items-center rounded-[var(--r)] bg-black text-white px-4 py-2">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="max-w-6xl mx-auto px-6 py-10 text-sm text-slate-600 flex items-center justify-between">
+      <span>&copy; <span id="y"></span> Your Name</span>
+      <nav class="flex gap-4">
+        <a class="hover:underline" href="./index-creative-grid.html">Creative Grid</a>
+        <a class="hover:underline" href="./index-minimal.html">Minimal</a>
+        <a class="hover:underline" href="./index-cards.html">Card‑based</a>
+      </nav>
+    </footer>
+    <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+  </body>
+</html>
