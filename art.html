@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Art — Portfolio</title>
+    <meta name="description" content="Art works — minimalist portfolio." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-slate-900 antialiased">
+    <header class="border-b border-slate-200">
+      <div class="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between">
+        <div class="text-sm tracking-wide text-slate-600">Portfolio</div>
+        <nav aria-label="Primary">
+          <ul class="flex gap-6 text-sm uppercase tracking-wide">
+            <li><a class="hover:underline" href="./architecture.html">Architecture</a></li>
+            <li><span class="font-semibold">Art</span></li>
+            <li><a class="hover:underline" href="./publication.html">Publication</a></li>
+            <li><a class="hover:underline" href="./index.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-5 py-16 sm:py-20">
+      <h1 class="text-3xl sm:text-4xl font-semibold">Art</h1>
+      <p class="mt-6 text-[17px] leading-8 text-slate-800 max-w-3xl">Explorations in material, form, and perception.</p>
+
+      <section class="mt-10 grid gap-10 sm:grid-cols-2">
+        <figure>
+          <img class="w-full rounded border border-slate-200" src="https://placehold.co/800x1000/png" alt="Artwork placeholder" />
+          <figcaption class="mt-3 text-sm text-slate-600">Work title — Medium, Year</figcaption>
+        </figure>
+        <figure>
+          <img class="w-full rounded border border-slate-200" src="https://placehold.co/800x1000/png" alt="Artwork placeholder" />
+          <figcaption class="mt-3 text-sm text-slate-600">Work title — Medium, Year</figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200">
+      <div class="max-w-5xl mx-auto px-5 py-8 text-sm text-slate-600 flex items-center justify-between">
+        <span>&copy; <span id="y"></span> Your Name</span>
+        <nav class="flex gap-4">
+          <a class="hover:underline" href="./architecture.html">Architecture</a>
+          <a class="font-semibold" href="./art.html">Art</a>
+          <a class="hover:underline" href="./publication.html">Publication</a>
+          <a class="hover:underline" href="./index.html">About</a>
+        </nav>
+      </div>
+    </footer>
+    <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+  </body>
+</html>
