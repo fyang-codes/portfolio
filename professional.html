@@ -15,7 +15,8 @@
     <style>
       :focus-visible { outline: 2px solid #0f172a; outline-offset: 4px }
       :root { --brand: #a7f3d0 }
-      :root { --link:#2C3E50; --hover:#81C784 }
+      :root { --bg:#FFFFFF; --link:#2C3E50; --hover:#66BB6A; --border:#E6E6E6 }
+      body { background-color: var(--bg) }
       .reveal { opacity: 0; transform: translateY(8px); transition: opacity .5s ease, transform .5s ease }
       .reveal.visible { opacity: 1; transform: translateY(0) }
       .themed-link { color: var(--link) }
