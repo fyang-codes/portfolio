@@ -19,7 +19,7 @@
       [data-theme="matcha"] { --bg:#FFFFFF; --text:#555555; --heading:#2C3E50; --muted:#A0A0A0; --border:#E6E6E6; --accent:#B2DFDB; --accent2:#66BB6A; --link:#2C3E50; --hover:#66BB6A }
       [data-theme="neo"] { --bg:#FFFFFF; --text:#4F4F4F; --heading:#333333; --muted:#888888; --border:#E0F2F1; --accent:#C8F7DC; --accent2:#80CBC4; --link:#2C3E50; --hover:#C8F7DC }
       body { background-color: var(--bg); color: var(--text) }
-      h1, h2, h3, h4 { color: var(--heading) }
+      h1, h2, h3, h4 { color: #2C3E50 }
       .themed-link { color: var(--link) }
       .themed-link:hover { color: var(--hover); text-decoration: underline }
       .reveal { opacity: 0; transform: translateY(8px); transition: opacity .5s ease, transform .5s ease }
@@ -43,14 +43,7 @@
             <li><span class="font-semibold">About</span></li>
           </ul>
         </nav>
-        <div class="text-xs text-slate-600 flex items-center gap-2">
-          <label for="theme" class="sr-only">Theme</label>
-          <select id="theme" class="border rounded px-2 py-1" aria-label="Theme">
-            <option value="mint">Mint</option>
-            <option value="matcha">Matcha</option>
-            <option value="neo">Neo</option>
-          </select>
-        </div>
+        
       </div>
     </header>
 
@@ -58,7 +51,7 @@
       <h1 class="text-3xl sm:text-4xl font-semibold">About</h1>
       <div class="mt-10 space-y-4 text-[17px] leading-8 reveal">
         <p>Fan is a designer and researcher working across products, services, and systems. Her practice focuses on clarity, culture, and human‑centered problem solving across diverse domains.</p>
-        <p class="text-slate-600">Fun fact: I collect stamps from all over the world.</p>
+        <p class="px-3 py-2 inline-block rounded bg-[var(--accent)] text-[#064e3b]">Fun fact: I collect stamps from all over the world.</p>
       </div>
 
       <section class="mt-12 reveal">
@@ -153,16 +146,8 @@
       if (qel) {
         setInterval(() => { qi = (qi + 1) % quotes.length; qel.textContent = quotes[qi] }, 3500)
       }
-      const saved = localStorage.getItem('theme') || 'matcha'
+      const saved = 'matcha'
       document.documentElement.setAttribute('data-theme', saved)
-      const sel = document.getElementById('theme')
-      if (sel) {
-        sel.value = saved
-        sel.addEventListener('change', () => {
-          localStorage.setItem('theme', sel.value)
-          document.documentElement.setAttribute('data-theme', sel.value)
-        })
-      }
     </script>
   </body>
 </html>

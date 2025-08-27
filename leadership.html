@@ -15,7 +15,7 @@
     <style>
       :focus-visible { outline: 2px solid #0f172a; outline-offset: 4px }
       :root { --brand: #a7f3d0 }
-      :root { --bg:#FFFFFF; --link:#2C3E50; --border:#E6E6E6 }
+      :root { --bg:#FFFFFF; --link:#2C3E50; --border:#E6E6E6; --accent2:#66BB6A }
       body { background-color: var(--bg) }
       .themed-link { color: var(--link) }
       .themed-link:hover { text-decoration: underline }
@@ -23,6 +23,8 @@
       .asym-grid > article:nth-child(even) { transform: translateY(-6px) }
       .reveal { opacity: 0; transform: translateY(8px); transition: opacity .5s ease, transform .5s ease }
       .reveal.visible { opacity: 1; transform: translateY(0) }
+      h1, h2, h3, h4 { color: #2C3E50 }
+      .accent-border-left { border-left-color: var(--accent2) !important }
     </style>
   </head>
   <body class="bg-white text-slate-900 antialiased">
@@ -44,7 +46,7 @@
     </header>
 
     <main class="max-w-4xl mx-auto px-5 py-16 sm:py-20">
-      <h1 class="text-3xl sm:text-4xl font-semibold reveal" style="color: var(--brand)">Leadership & Impact</h1>
+      <h1 class="text-3xl sm:text-4xl font-semibold reveal">Leadership & Impact</h1>
       <p class="mt-6 text-[17px] leading-8 text-slate-800 max-w-3xl">Leadership roles and volunteer work that showcase community involvement, organizational skills, and commitment to making a positive impact.</p>
 
       <section class="mt-10 grid gap-12 reveal asym-grid">
@@ -52,7 +54,7 @@
         <div>
           <h2 class="text-xl font-medium text-slate-900 mb-6">Leadership Roles</h2>
           <div class="space-y-8">
-            <article class="border-l-4 border-indigo-500 pl-6">
+            <article class="border-l-4 pl-6 accent-border-left">
               <div class="flex justify-between items-start">
                 <div>
                   <h3 class="text-lg font-medium">Cultural Committee Secretary</h3>
@@ -76,7 +78,7 @@
               </div>
             </article>
             
-            <article class="border-l-4 border-emerald-500 pl-6">
+            <article class="border-l-4 pl-6 accent-border-left">
               <div class="flex justify-between items-start">
                 <div>
                   <h3 class="text-lg font-medium">Member of Programme Advisory Committee (PAC)</h3>
