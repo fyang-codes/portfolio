@@ -14,9 +14,9 @@
     </script>
     <style>
       :focus-visible { outline: 2px solid #0f172a; outline-offset: 4px }
-      :root { --brand: #a7f3d0; --bg:#F5FFF9; --text:#4F4F4F; --heading:#2C3E50; --muted:#888888; --border:#E0F2F1; --accent:#A8E6CF; --accent2:#80CBC4; --link:#2C3E50; --hover:#81C784 }
-      [data-theme="mint"] { --bg:#F5FFF9; --text:#4F4F4F; --heading:#2C3E50; --muted:#888888; --border:#E0F2F1; --accent:#A8E6CF; --accent2:#80CBC4; --link:#2C3E50; --hover:#81C784 }
-      [data-theme="matcha"] { --bg:#FFFFFF; --text:#555555; --heading:#2C3E50; --muted:#A0A0A0; --border:#E6E6E6; --accent:#B2DFDB; --accent2:#66BB6A; --link:#2C3E50; --hover:#66BB6A }
+      :root { --brand: #a7f3d0; --bg:#F5FFF9; --text:#4F4F4F; --heading:#2C3E50; --muted:#888888; --border:#E0F2F1; --accent:#C8F7DC; --accent2:#80CBC4; --link:#2C3E50; --hover:#81C784 }
+      [data-theme="mint"] { --bg:#F5FFF9; --text:#4F4F4F; --heading:#2C3E50; --muted:#888888; --border:#E0F2F1; --accent:#C8F7DC; --accent2:#80CBC4; --link:#2C3E50; --hover:#81C784 }
+      [data-theme="matcha"] { --bg:#FFFFFF; --text:#555555; --heading:#2C3E50; --muted:#A0A0A0; --border:#E6E6E6; --accent:#C8F7DC; --accent2:#66BB6A; --link:#2C3E50; --hover:#66BB6A }
       [data-theme="neo"] { --bg:#FFFFFF; --text:#4F4F4F; --heading:#333333; --muted:#888888; --border:#E0F2F1; --accent:#C8F7DC; --accent2:#80CBC4; --link:#2C3E50; --hover:#C8F7DC }
       body { background-color: var(--bg); color: var(--text) }
       h1, h2, h3, h4 { color: #2C3E50 }
@@ -32,7 +32,7 @@
     <header class="border-b border-slate-200">
       <div class="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between">
         <a href="./index.html" class="flex items-center gap-2" aria-label="Home">
-          <img src="favicon.ico" alt="Logo" class="h-6 w-6 rounded" />
+          <img src="favicon.ico" alt="Logo" class="h-8 w-8 rounded" />
           <span class="sr-only">Portfolio</span>
         </a>
         <nav aria-label="Primary">
@@ -122,7 +122,7 @@
 
     <footer class="border-t border-slate-200">
       <div class="max-w-5xl mx-auto px-5 py-8 text-sm text-slate-600 flex items-center justify-between">
-        <span>&copy; <span id="y"></span> Fan Yang</span>
+        <span>&copy; <span id="y"></span> Fan Yang • Visitors: <span id="visit-count">—</span></span>
         <nav class="flex gap-4">
           <a class="themed-link" href="./professional.html">Professional</a>
           <a class="themed-link" href="./leadership.html">Leadership</a>
@@ -149,6 +149,10 @@
       }
       const saved = 'matcha'
       document.documentElement.setAttribute('data-theme', saved)
+      fetch('https://api.countapi.xyz/hit/aero-portfolio/site').then(r => r.json()).then(d => {
+        const vc = document.getElementById('visit-count')
+        if (vc && d && typeof d.value !== 'undefined') vc.textContent = d.value
+      }).catch(() => {})
     </script>
   </body>
 </html>
