@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Work Grid</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 2rem;
+      color: #222;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    .logo {
+      color: green;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav {
+      font-style: italic;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #222;
+    }
+        nav a:hover {
+      color: #6BBF59;
+    }
+        .tooltip:hover .tooltip-panel {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    nav a.active {
+      color: green;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+    .work-item h3 {
+      font-style: italic;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .work-item img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    .work-item p {
+      font-size: 0.95rem;
+      color: #444;
+    }
+        .tooltip {
+      position: relative;
+      cursor: pointer;
+    }
+    .tooltip-panel {
+      position: absolute;
+      left: 50%;
+      bottom: 120%;
+      transform: translateX(-50%);
+      background: #6BBF59;
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.8em;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+      white-space: nowrap;
+      z-index: 10;
+    }
+    .tooltip:hover .tooltip-panel {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    footer {
+      font-style: italic;
+      color: #444;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="IMG_7790.JPG" alt="logo" style="height: 50px; width: 50px; border-radius: 50%; object-fit: cover;" />
+    </div>
+    <nav>
+  <a href="work.html" >work</a>
+  <a href="with.html"style="color:#6BBF59;">with</a>
+  <a href="play.html">play</a>
+  <a href="index3.html" style="margin-right:2rem;">about</a>
+      <span class="tooltip" aria-label="plant info">
+        🪴
+        <span class="tooltip-panel">one year strong 🪴</span>
+      </span>
+    </nav>
+  </header>
+
+  <section class="grid">
+    <div class="work-item">
+      <h3>where should I look?</h3>
+      <img src="work1.jpg" alt="Project 1">
+      <p>evidence-based guidelines to support orientation & mobility training</p>
+    </div>
+
+    <div class="work-item">
+      <h3>to alarm, or not to alarm</h3>
+      <img src="work2.jpg" alt="Project 2">
+      <p>human factors behind ICU alarm fatigue</p>
+    </div>
+
+    <div class="work-item">
+      <h3>women in legislation</h3>
+      <img src="work3.jpg" alt="Project 3">
+      <p>Illustration of announcement posters</p>
+    </div>
+
+    <div class="work-item">
+      <h3>Vita Verde Fitness Center</h3>
+      <img src="work4.jpg" alt="Project 4">
+      <p>Illustration of announcement posters</p>
+    </div>
+  </section>
+
+  <footer>
+    @ 2025        fan yang
+  </footer>
+</body>
+</html>
