@@ -66,7 +66,7 @@ function getPathToRoot() {
     const depth = (path.match(/\//g) || []).length - 1;
     
     // If we're at the root already
-    if (depth <= 1) return '';
+    if (depth <= 1) return './';
     
     // Otherwise go up based on folder depth
     return '../'.repeat(depth - 1);
