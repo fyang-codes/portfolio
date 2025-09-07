@@ -89,6 +89,26 @@
       width: 100%;
       border-radius: 8px;
     }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .image-item {
+      text-align: center;
+    }
+    .image-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .image-item p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
     .recommendations {
       margin-top: 3rem;
       padding-top: 2rem;
@@ -109,6 +129,8 @@
     }
     .recommendations .item img {
       width: 100%;
+      height: 160px;
+      object-fit: cover;
       border-radius: 6px;
       margin-bottom: 0.5rem;
     }
@@ -125,21 +147,7 @@
   </style>
 </head>
 <body>
-  <header>
-    <div>
-      <img src="../images/logo.jpg" alt="logo" style="height: 50px; width: 50px; border-radius: 50%; object-fit: cover;" />
-    </div>
-    <nav>
-      <a href="../work/work.html">work</a>
-      <a href="../with/with.html">with</a>
-      <a href="../play/play.html">play</a>
-      <a href="../index.html">about</a>&nbsp;&nbsp;
-      <span class="tooltip" aria-label="plant info">
-        🪴
-        <span class="tooltip-panel">one year strong 🪴</span>
-      </span>
-    </nav>
-  </header>
+  <!-- Header will be inserted by common.js -->
 
   <main>
     <h1>What Are Dutch Farmers Up To? (Responding to the Nitrogen Crisis)</h1>
@@ -158,6 +166,23 @@
       <li>Picked the brains of experts from every corner of Utrecht University in intense seminar sessions</li>
       <li>Created "De Eerste" - a documentary giving farmers a voice in the nitrogen debate (yes, it's on YouTube and people actually watch it)</li>
     </ul>
+    
+    <div class="image-grid">
+      <div class="image-item">
+        <img src="w4_1.JPG" alt="Honors Program Field Research">
+        <p>Field research with farmers affected by the nitrogen policy</p>
+      </div>
+      
+      <div class="image-item">
+        <img src="w4_2.JPG" alt="Documentary Interview Session">
+        <p>Interview session for the documentary "De Eerste"</p>
+      </div>
+      
+      <div class="image-item">
+        <img src="w4_3.JPG" alt="Research Presentation">
+        <p>Presenting research findings to university faculty</p>
+      </div>
+    </div>
 
     <h2>Results</h2>
     <p>
@@ -190,8 +215,6 @@
     </section>
   </main>
 
-  <footer>
-    fan yang
-  </footer>
+  <!-- Footer will be inserted by common.js -->
 </body>
 </html>

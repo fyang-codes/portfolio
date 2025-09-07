@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Page</title>
+  <title>When Alarms Never Stop Screaming</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/common.js" defer></script>
   <style>
     body {
       font-family: Georgia, serif;
@@ -86,6 +89,26 @@
       width: 100%;
       border-radius: 8px;
     }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .image-item {
+      text-align: center;
+    }
+    .image-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .image-item p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
     .recommendations {
       margin-top: 3rem;
       padding-top: 2rem;
@@ -106,6 +129,8 @@
     }
     .recommendations .item img {
       width: 100%;
+      height: 160px;
+      object-fit: cover;
       border-radius: 6px;
       margin-bottom: 0.5rem;
     }
@@ -122,54 +147,69 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">618</div>
-    <nav>
-    <a href="../work.html">work</a>
-    <a href="../with.html">with</a>
-    <a href="../play.html">play</a>
-    <a href="../index.html">about</a>
-    </nav>
-  </header>
+  <!-- Header will be inserted by common.js -->
 
   <main>
-    <h1>To Alarm, or Not to Alarm</h1>
-    <p><em>Human factors research exploring ICU alarm fatigue and strategies for improvement.</em></p>
+    <h1>When Alarms Never Stop Screaming</h1>
+    <p><em>UX Researcher | Critical Alarms Lab & TU Delft | April 2025 - Present</em></p>
 
-    <h2>Reasoning</h2>
+    <h2>The Project Deep Dive</h2>
     <p>
-      Alarm fatigue in intensive care units (ICUs) is a critical issue affecting patient safety and healthcare worker effectiveness. This project examines the human factors behind alarm fatigue and proposes evidence-based solutions to mitigate its negative impacts on clinical decision-making and patient outcomes.
+      Ever wondered why ICU nurses seem to have superhuman abilities to work through constant beeping? Turns out, they're just really good at ignoring alarms - which is both impressive and terrifying. I'm currently deep in the world of alarm fatigue, trying to figure out why critical alerts get lost in the noise.
+    </p>
+    <p>
+      Picture this: you're in an ICU where alarms go off every 30 seconds. Some are life-threatening, some are just annoying sensor glitches. How do you tell the difference when your brain has learned to tune them all out? That's exactly what we're investigating.
     </p>
 
     <h2>Process</h2>
     <p>
-      This project followed a comprehensive human factors approach to analyze and address ICU alarm fatigue:
+      I've been hanging around Rotterdam Erasmus Hospital ICU units, convincing incredibly busy nurses to share their alarm horror stories through carefully designed CASTOR surveys. The recruitment process alone taught me that hospital timing is an art form - you learn to spot the 3-minute windows between emergencies.
     </p>
     <ul>
-      <li>Conducted observational studies in multiple ICU environments</li>
-      <li>Interviewed healthcare professionals about alarm response behaviors</li>
-      <li>Analyzed alarm data to identify patterns and false positive rates</li>
-      <li>Developed prototypes for improved alarm management systems</li>
+      <li>CASTOR survey implementation with ICU nurses</li>
+      <li>ICU soundscape recordings and analysis</li>
+      <li>R for survey analytics on nursing stress levels</li>
+      <li>Python for soundscape dissection</li>
+      <li>SmartPLS for structural equation modeling</li>
     </ul>
 
-    <div class="image-block">
-      <img src="process.jpg" alt="Process illustration">
-      <p><em>Workflow analysis showing alarm triggers and healthcare response patterns.</em></p>
+    <div class="image-grid">
+      <div class="image-item">
+        <img src="2_1.png" alt="ICU alarm analysis">
+        <p>Data visualization of alarm frequency patterns</p>
+      </div>
+
+      <div class="image-item">
+        <img src="2_2.png" alt="ICU environment observation">
+        <p>Observation setup for monitoring nurse responses</p>
+      </div>
     </div>
 
-    <h2>Results</h2>
+    <h2>The Fun Really Starts With Data Analysis</h2>
     <p>
-      The research yielded several key insights and recommendations for addressing alarm fatigue in critical care settings:
+      I'm juggling R for survey analytics (discovering just how stressed these nurses really are), Python for dissecting soundscape recordings (yes, we actually recorded the ICU chaos), and SmartPLS for structural equation modeling. The goal? Finding the perfect formula that predicts when alarm fatigue hits hardest and what we can do about it.
     </p>
-    <ul>
-      <li>Identified that 68% of ICU alarms did not require clinical intervention</li>
-      <li>Developed a priority-based alarm filtering system that reduced non-actionable alerts by 47%</li>
-      <li>Created guidelines for alarm customization based on patient-specific factors</li>
-    </ul>
+    
+    <div class="image-grid">
+      <div class="image-item">
+        <img src="2_3.png" alt="Sound wave analysis">
+        <p>Sound pattern analysis showing alarm frequency overlaps and interference patterns</p>
+      </div>
+    </div>
 
-    <div class="image-block">
-      <img src="results.jpg" alt="Results visualization">
-      <p><em>Visualization of alarm reduction and improved response times after implementation.</em></p>
+    <h2>What This Really Means</h2>
+    <p>
+      We're not just collecting data - we're trying to save lives by making technology that actually helps instead of overwhelms. Every data point represents a nurse's real struggle and a patient's safety.
+    </p>
+    <p>
+      Our early findings show that nurses develop highly personalized cognitive strategies to filter alarms. We've identified specific sound patterns that are most likely to be tuned out, and we're working on developing context-aware systems that can adapt their notification urgency based on the overall noise environment.
+    </p>
+
+    <div class="image-grid">
+      <div class="image-item">
+        <img src="2_4.png" alt="Alarm fatigue intervention model">
+        <p>Proposed intervention model that adapts alarm systems to human cognitive patterns</p>
+      </div>
     </div>
 
     <section class="recommendations">
@@ -177,28 +217,20 @@
       <div class="grid">
         <div class="item">
           <a href="work1.html">
-            <img src="thumb1.jpg" alt="Project 1 thumbnail">
-            Where Should I Look?
+            <img src="1_1.png" alt="Project 1 thumbnail">
+            Teaching Computers to See
           </a>
         </div>
         <div class="item">
           <a href="work3.html">
-            <img src="thumb3.jpg" alt="Project 3 thumbnail">
-            Women in Legislation
-          </a>
-        </div>
-        <div class="item">
-          <a href="work4.html">
-            <img src="thumb4.jpg" alt="Project 4 thumbnail">
-            Vita Verde Fitness Center
+            <img src="3_2.png" alt="Project 3 thumbnail">
+            Building AI That Cares
           </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    fan yang
-  </footer>
+  <!-- Footer will be inserted by common.js -->
 </body>
 </html>

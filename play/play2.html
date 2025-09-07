@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Experiments - Personal Portfolio</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/common.js" defer></script>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 2rem;
+      color: #222;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      color: green;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    .image-block {
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .image-block img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .image-item {
+      text-align: center;
+    }
+    .image-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .image-item p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+    .recommendations {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #ccc;
+    }
+    .recommendations h2 {
+      font-size: 1.2rem;
+      color: green;
+      margin-bottom: 1rem;
+    }
+    .recommendations .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .recommendations .item {
+      text-align: center;
+    }
+    .recommendations .item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    .recommendations .item a {
+      text-decoration: none;
+      color: #222;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header will be inserted by common.js -->
+
+  <main>
+    <h1>Personal Digital Experiments</h1>
+    <p><em>Interactive digital explorations and creative coding</em></p>
+
+    <h2>About This Project</h2>
+    <p>
+      These digital experiments represent my playground for exploring interactive design, creative coding, and generative art. They're the result of curiosity-driven weekends and late nights when I wanted to stretch my technical and creative muscles outside of client work.
+    </p>
+
+    <div class="image-grid">
+      <div class="image-item">
+        <img src="project1.png" alt="Digital experiment 1">
+        <p>Interactive data visualization experiment</p>
+      </div>
+      
+      <div class="image-item">
+        <img src="project2.png" alt="Digital experiment 2">
+        <p>Generative typography system using p5.js</p>
+      </div>
+    </div>
+
+    <h2>The Process</h2>
+    <p>
+      Each experiment starts with a simple question: "What if...?" What if colors could respond to sound? What if data could be navigated spatially? What if typography could behave like a living organism? These questions lead to quick prototypes that sometimes evolve into more polished explorations.
+    </p>
+
+    <h2>What I've Learned</h2>
+    <p>
+      These personal projects have been invaluable for developing technical skills, but more importantly, they've taught me to embrace experimentation without fear of failure. They remind me that play is an essential part of the creative process, and that the most interesting ideas often emerge when I'm not trying to solve a specific problem.
+    </p>
+
+    <section class="recommendations">
+      <h2>Discover More Projects</h2>
+      <div class="grid">
+        <div class="item">
+          <a href="play1.html">
+            <img src="1.JPG" alt="Photography project">
+            Photography Explorations
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer will be inserted by common.js -->
+</body>
+</html>

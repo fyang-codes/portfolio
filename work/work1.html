@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Page</title>
+  <title>Teaching Computers to See What Blind People Need to Know</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/common.js" defer></script>
   <style>
     body {
       font-family: Georgia, serif;
@@ -87,6 +90,26 @@
       width: 100%;
       border-radius: 8px;
     }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .image-item {
+      text-align: center;
+    }
+    .image-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .image-item p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
     .recommendations {
       margin-top: 3rem;
       padding-top: 2rem;
@@ -107,6 +130,8 @@
     }
     .recommendations .item img {
       width: 100%;
+      height: 160px;
+      object-fit: cover;
       border-radius: 6px;
       margin-bottom: 0.5rem;
     }
@@ -134,72 +159,79 @@
   </header>
 
   <main>
-    <h1>Project Title Here</h1>
-    <p><em>Short one-line summary of the project (e.g., evidence-based guidelines for mobility training).</em></p>
+    <h1>Teaching Computers to See What Blind People Need to Know</h1>
+    <p><em>Researcher | Koninklijke Visio | October 2024 - April 2025</em></p>
 
-    <h2>Reasoning</h2>
+    <h2>The Real Story</h2>
     <p>
-      Explain the context and motivation behind this project. For example: why the problem mattered, who it affects, and what gap in knowledge or design you aimed to address.
+      Six months of diving into one of the most humbling research questions I've ever tackled: How do you help someone navigate a world they can't see, especially when that world is full of cars, bikes, and unpredictable Dutch pedestrians?
+    </p>
+    <p>
+      Working with Koninklijke Visio opened my eyes (pun intended) to how incredibly complex "simple" navigation really is. Think about crossing a busy Amsterdam street - you automatically process dozens of visual cues: car speeds, pedestrian movements, cyclist intentions, traffic light timing. Now imagine doing that with sound and touch alone.
     </p>
 
     <h2>Process</h2>
     <p>
-      Describe your workflow step-by-step. You might include:
+      I designed a web-based experiment that was part detective game, part cognitive challenge. Participants had to identify hazards in dynamic street scenes while we tracked every click, every hesitation, every moment of uncertainty. The Google Scripts integration meant we could capture not just what people saw, but how long it took them to see it and where they looked first.
     </p>
     <ul>
-      <li>Research methods (e.g., surveys, interviews, literature review)</li>
-      <li>Design tools or frameworks you used</li>
-      <li>Collaboration with participants, colleagues, or mentors</li>
-      <li>Prototypes, sketches, or models created along the way</li>
+      <li>Web-based experiment design for hazard identification</li>
+      <li>Google Scripts for detailed interaction tracking</li>
+      <li>YOLO algorithm implementation for computer vision</li>
+      <li>Python analysis of temporal-spatial error patterns</li>
     </ul>
 
-    <div class="image-block">
-      <img src="process.jpg" alt="Process illustration">
-      <p><em>Optional caption describing process diagram or prototype.</em></p>
+    <div class="image-grid">
+      <div class="image-item">
+        <img src="1_1.png" alt="YOLO algorithm detecting objects in a street scene">
+        <p>Computer vision models identifying potential hazards</p>
+      </div>
+
+      <div class="image-item">
+        <img src="1_2.png" alt="Experiment interface for hazard identification">
+        <p>Web-based experiment interface for testing</p>
+      </div>
     </div>
 
-    <h2>Results</h2>
+    <h2>The Human Element</h2>
     <p>
-      Summarize the outcomes. Include data points, findings, or final designs. Be clear on how the results answered the original problem and what impact they had.
+      Every data point represented someone's potential safety. When we found that participants consistently missed certain types of hazards, it wasn't just a statistical finding - it was a roadmap for better assistive technology. The temporal-spatial error patterns showed us exactly where and when people needed the most help.
     </p>
-    <ul>
-      <li>Key findings with evidence (charts, user feedback, stats)</li>
-      <li>Final deliverables (guidelines, designs, reports)</li>
-      <li>Potential impact or next steps for this work</li>
-    </ul>
+    <p>
+      The YOLO algorithm implementation was like teaching a computer to be a seeing-eye dog. We fed it thousands of street images, training it to recognize not just "car" or "person," but "car moving toward crosswalk" or "cyclist not paying attention."
+    </p>
 
-    <div class="image-block">
-      <img src="results.jpg" alt="Results visualization">
-      <p><em>Optional caption describing findings or final deliverable.</em></p>
+    <h2>What Made This Special</h2>
+    <p>
+      This wasn't abstract research. Every algorithm tweak, every data analysis session was driven by the knowledge that this work could mean the difference between someone safely crossing the street or not. The combination of cutting-edge computer vision and deeply human needs made every day feel meaningful.
+    </p>
+
+    <div class="image-grid">
+      <div class="image-item">
+        <img src="1_3.png" alt="Results visualization of hazard detection patterns">
+        <p>Visualization of temporal-spatial error patterns in hazard detection</p>
+      </div>
     </div>
 
     <section class="recommendations">
       <h2>Discover More Projects</h2>
       <div class="grid">
         <div class="item">
-          <a href="project1.html">
-            <img src="thumb1.jpg" alt="Project 1 thumbnail">
-            Project 1 Title
+          <a href="work2.html">
+            <img src="2_4.png" alt="Project 2 thumbnail">
+            When Alarms Never Stop Screaming
           </a>
         </div>
         <div class="item">
-          <a href="project2.html">
-            <img src="thumb2.jpg" alt="Project 2 thumbnail">
-            Project 2 Title
-          </a>
-        </div>
-        <div class="item">
-          <a href="project3.html">
-            <img src="thumb3.jpg" alt="Project 3 thumbnail">
-            Project 3 Title
+          <a href="work3.html">
+            <img src="3_2.png" alt="Project 3 thumbnail">
+            Building AI That Cares
           </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    fan yang
-  </footer>
+  <!-- Footer will be inserted by common.js -->
 </body>
 </html>

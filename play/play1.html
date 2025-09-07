@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Explorations - Personal Portfolio</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/common.js" defer></script>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 2rem;
+      color: #222;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      color: green;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    .image-block {
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .image-block img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .image-item {
+      text-align: center;
+    }
+    .image-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .image-item p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+    .recommendations {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #ccc;
+    }
+    .recommendations h2 {
+      font-size: 1.2rem;
+      color: green;
+      margin-bottom: 1rem;
+    }
+    .recommendations .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .recommendations .item {
+      text-align: center;
+    }
+    .recommendations .item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    .recommendations .item a {
+      text-decoration: none;
+      color: #222;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header will be inserted by common.js -->
+
+  <main>
+    <h1>Photography Explorations</h1>
+    <p><em>Visual studies of urban environments and natural landscapes</em></p>
+
+    <h2>About This Project</h2>
+    <p>
+      Photography has always been my way of slowing down and truly seeing the world around me. These images represent moments of discovery, where light, texture, and composition revealed something unexpected in both urban and natural settings.
+    </p>
+
+    <div class="image-grid">
+      <div class="image-item">
+        <img src="1.JPG" alt="Urban landscape photograph">
+        <p>Urban patterns and textures study</p>
+      </div>
+
+      <div class="image-item">
+        <img src="2.JPG" alt="Natural landscape photograph">
+        <p>Light study in natural environments</p>
+      </div>
+    </div>
+
+    <h2>The Process</h2>
+    <p>
+      Each photograph starts with a moment of curiosity - something that catches my eye in the ordinary world. I'm particularly drawn to the interplay between natural and constructed environments, finding unexpected harmony in these intersections.
+    </p>
+
+    <h2>What I've Learned</h2>
+    <p>
+      Photography has taught me patience and observation - skills that translate to every aspect of my creative and professional work. It's a practice in seeing potential where others might see nothing special, and finding ways to frame that potential in a compelling way.
+    </p>
+
+    <section class="recommendations">
+      <h2>Discover More Projects</h2>
+      <div class="grid">
+        <div class="item">
+          <a href="play2.html">
+            <img src="project1.png" alt="Digital experiments">
+            Personal Digital Experiments
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer will be inserted by common.js -->
+</body>
+</html>
