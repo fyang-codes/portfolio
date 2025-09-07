@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orchestrating Adventures - Cultural Committee Secretary</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/common.js" defer></script>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 2rem;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    .logo {
+      color: green;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav {
+      font-style: italic;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #222;
+    }
+    nav a.active {
+      color: green;
+    }
+    nav a:hover {
+      color: #6BBF59;
+    }
+    .tooltip {
+      position: relative;
+      cursor: pointer;
+    }
+    .tooltip-panel {
+      position: absolute;
+      left: 50%;
+      bottom: 120%;
+      transform: translateX(-50%);
+      background: #6BBF59;
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.8em;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+      white-space: nowrap;
+      z-index: 10;
+    }
+    .tooltip:hover .tooltip-panel {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      color: green;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    .image-block {
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .image-block img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .recommendations {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #ccc;
+    }
+    .recommendations h2 {
+      font-size: 1.2rem;
+      color: green;
+      margin-bottom: 1rem;
+    }
+    .recommendations .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .recommendations .item {
+      text-align: center;
+    }
+    .recommendations .item img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    .recommendations .item a {
+      text-decoration: none;
+      color: #222;
+      font-style: italic;
+    }
+    footer {
+      font-style: italic;
+      color: #444;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="../images/logo.jpg" alt="logo" style="height: 50px; width: 50px; border-radius: 50%; object-fit: cover;" />
+    </div>
+    <nav>
+      <a href="../work/work.html">work</a>
+      <a href="../with/with.html">with</a>
+      <a href="../play/play.html">play</a>
+      <a href="../index.html">about</a>&nbsp;&nbsp;
+      <span class="tooltip" aria-label="plant info">
+        🪴
+        <span class="tooltip-panel">one year strong 🪴</span>
+      </span>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Orchestrating Adventures Across the Netherlands</h1>
+    <p><em>Cultural Committee Secretary</em></p>
+
+    <h2>Reasoning</h2>
+    <p>
+      Transformed chaotic group dynamics into seamless cultural experiences by leading the coordination of trips and events across the Netherlands. Successfully managed complex logistics while keeping 40+ participants engaged and satisfied.
+    </p>
+
+    <h2>Process</h2>
+    <p>
+      As Cultural Committee Secretary, I developed systems to create meaningful experiences for participants:
+    </p>
+    <ul>
+      <li>Designed and executed comprehensive trip itineraries to iconic Dutch destinations including Gouda, Zwolle, Groningen, Ameland, and Efteling</li>
+      <li>Streamlined operations through strategic email management, vendor negotiations, and systematic digital organization</li>
+      <li>Maintained operational excellence by documenting proceedings and coordinating committee workflows</li>
+      <li>Pioneered post-event evaluation systems, driving measurable improvements in participant satisfaction and event quality</li>
+    </ul>
+
+    <h2>Results</h2>
+    <p>
+      My organizational leadership transformed the Cultural Committee's effectiveness, resulting in well-executed cultural experiences for international students. The systematic approach to planning and evaluation created a framework for sustainable improvement in event quality.
+    </p>
+
+    <section class="recommendations">
+      <h2>Discover More Projects</h2>
+      <div class="grid">
+        <div class="item">
+          <a href="with1.html">
+            <img src="thumb1.jpg" alt="PAC Member thumbnail">
+            Amplifying Student Voices
+          </a>
+        </div>
+        <div class="item">
+          <a href="with3.html">
+            <img src="thumb3.jpg" alt="IFMSA-Utrecht thumbnail">
+            Revitalizing Community
+          </a>
+        </div>
+        <div class="item">
+          <a href="with4.html">
+            <img src="thumb4.jpg" alt="Honors Program thumbnail">
+            Exploring Complex Societal Challenges
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    fan yang
+  </footer>
+</body>
+</html>

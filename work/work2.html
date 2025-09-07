@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Page</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 2rem;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    .logo {
+      color: green;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav {
+      font-style: italic;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #222;
+    }
+    nav a.active {
+      color: green;
+    }
+    nav a:hover {
+      color: #6BBF59;
+    }
+    .tooltip {
+      position: relative;
+      cursor: pointer;
+    }
+    .tooltip-panel {
+      position: absolute;
+      left: 50%;
+      bottom: 120%;
+      transform: translateX(-50%);
+      background: #6BBF59;
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.8em;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+      white-space: nowrap;
+      z-index: 10;
+    }
+    .tooltip:hover .tooltip-panel {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      color: green;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    .image-block {
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .image-block img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .recommendations {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #ccc;
+    }
+    .recommendations h2 {
+      font-size: 1.2rem;
+      color: green;
+      margin-bottom: 1rem;
+    }
+    .recommendations .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .recommendations .item {
+      text-align: center;
+    }
+    .recommendations .item img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    .recommendations .item a {
+      text-decoration: none;
+      color: #222;
+      font-style: italic;
+    }
+    footer {
+      font-style: italic;
+      color: #444;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">618</div>
+    <nav>
+    <a href="../work.html">work</a>
+    <a href="../with.html">with</a>
+    <a href="../play.html">play</a>
+    <a href="../index.html">about</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>To Alarm, or Not to Alarm</h1>
+    <p><em>Human factors research exploring ICU alarm fatigue and strategies for improvement.</em></p>
+
+    <h2>Reasoning</h2>
+    <p>
+      Alarm fatigue in intensive care units (ICUs) is a critical issue affecting patient safety and healthcare worker effectiveness. This project examines the human factors behind alarm fatigue and proposes evidence-based solutions to mitigate its negative impacts on clinical decision-making and patient outcomes.
+    </p>
+
+    <h2>Process</h2>
+    <p>
+      This project followed a comprehensive human factors approach to analyze and address ICU alarm fatigue:
+    </p>
+    <ul>
+      <li>Conducted observational studies in multiple ICU environments</li>
+      <li>Interviewed healthcare professionals about alarm response behaviors</li>
+      <li>Analyzed alarm data to identify patterns and false positive rates</li>
+      <li>Developed prototypes for improved alarm management systems</li>
+    </ul>
+
+    <div class="image-block">
+      <img src="process.jpg" alt="Process illustration">
+      <p><em>Workflow analysis showing alarm triggers and healthcare response patterns.</em></p>
+    </div>
+
+    <h2>Results</h2>
+    <p>
+      The research yielded several key insights and recommendations for addressing alarm fatigue in critical care settings:
+    </p>
+    <ul>
+      <li>Identified that 68% of ICU alarms did not require clinical intervention</li>
+      <li>Developed a priority-based alarm filtering system that reduced non-actionable alerts by 47%</li>
+      <li>Created guidelines for alarm customization based on patient-specific factors</li>
+    </ul>
+
+    <div class="image-block">
+      <img src="results.jpg" alt="Results visualization">
+      <p><em>Visualization of alarm reduction and improved response times after implementation.</em></p>
+    </div>
+
+    <section class="recommendations">
+      <h2>Discover More Projects</h2>
+      <div class="grid">
+        <div class="item">
+          <a href="work1.html">
+            <img src="thumb1.jpg" alt="Project 1 thumbnail">
+            Where Should I Look?
+          </a>
+        </div>
+        <div class="item">
+          <a href="work3.html">
+            <img src="thumb3.jpg" alt="Project 3 thumbnail">
+            Women in Legislation
+          </a>
+        </div>
+        <div class="item">
+          <a href="work4.html">
+            <img src="thumb4.jpg" alt="Project 4 thumbnail">
+            Vita Verde Fitness Center
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    fan yang
+  </footer>
+</body>
+</html>

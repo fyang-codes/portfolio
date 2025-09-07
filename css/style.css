@@ -1,0 +1,89 @@
+/* Common styles for all pages */
+body {
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 2rem;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.logo {
+  color: green;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav {
+  font-style: italic;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #222;
+}
+
+nav a.active {
+  color: green;
+}
+
+nav a:hover {
+  color: #6BBF59;
+}
+
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip-panel {
+  position: absolute;
+  left: 50%;
+  bottom: 120%;
+  transform: translateX(-50%);
+  background: #6BBF59;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8em;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.tooltip:hover .tooltip-panel {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: green;
+}
+
+footer {
+  font-style: italic;
+  color: #444;
+  margin-top: 3rem;
+}

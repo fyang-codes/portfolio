@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exploring Complex Societal Challenges - Honors Program</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/common.js" defer></script>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 2rem;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    .logo {
+      color: green;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav {
+      font-style: italic;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #222;
+    }
+    nav a.active {
+      color: green;
+    }
+    nav a:hover {
+      color: #6BBF59;
+    }
+    .tooltip {
+      position: relative;
+      cursor: pointer;
+    }
+    .tooltip-panel {
+      position: absolute;
+      left: 50%;
+      bottom: 120%;
+      transform: translateX(-50%);
+      background: #6BBF59;
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.8em;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+      white-space: nowrap;
+      z-index: 10;
+    }
+    .tooltip:hover .tooltip-panel {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      color: green;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    .image-block {
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .image-block img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .recommendations {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #ccc;
+    }
+    .recommendations h2 {
+      font-size: 1.2rem;
+      color: green;
+      margin-bottom: 1rem;
+    }
+    .recommendations .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .recommendations .item {
+      text-align: center;
+    }
+    .recommendations .item img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    .recommendations .item a {
+      text-decoration: none;
+      color: #222;
+      font-style: italic;
+    }
+    footer {
+      font-style: italic;
+      color: #444;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="../images/logo.jpg" alt="logo" style="height: 50px; width: 50px; border-radius: 50%; object-fit: cover;" />
+    </div>
+    <nav>
+      <a href="../work/work.html">work</a>
+      <a href="../with/with.html">with</a>
+      <a href="../play/play.html">play</a>
+      <a href="../index.html">about</a>&nbsp;&nbsp;
+      <span class="tooltip" aria-label="plant info">
+        🪴
+        <span class="tooltip-panel">one year strong 🪴</span>
+      </span>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Exploring Complex Societal Challenges</h1>
+    <p><em>Interdisciplinary Research Fellow - Honors Program</em></p>
+    <p><em>Documentary: "De Eerste" - Farmer Perspectives on the Nitrogen Crisis</em></p>
+
+    <h2>Reasoning</h2>
+    <p>
+      Led comprehensive research into one of the Netherlands' most pressing environmental challenges as part of an elite interdisciplinary honors program, producing original content that bridges academic research with public discourse.
+    </p>
+
+    <h2>Process</h2>
+    <p>
+      My interdisciplinary research approach involved multiple methodologies:
+    </p>
+    <ul>
+      <li>Investigated societally relevant environmental policy through multi-stakeholder analysis of the Dutch nitrogen crisis</li>
+      <li>Applied advanced interdisciplinary research methodologies including field observation, cross-sector integration, and scientific communication</li>
+      <li>Engaged with subject matter experts across Utrecht University through intensive seminar participation</li>
+      <li>Produced and published "De Eerste," a documentary featuring authentic farmer perspectives on environmental policy (available on YouTube)</li>
+    </ul>
+
+    <h2>Results</h2>
+    <p>
+      This project successfully bridged academic research with real-world perspectives, creating an accessible documentary that highlighted farmer voices in the nitrogen policy debate. The work demonstrated the value of interdisciplinary approaches to complex societal challenges.
+    </p>
+    <p class="project-note"><em>This project represents one component of a comprehensive honors program that included personal reflection work, systems thinking exercises, and collaborative research initiatives.</em></p>
+
+    <section class="recommendations">
+      <h2>Discover More Projects</h2>
+      <div class="grid">
+        <div class="item">
+          <a href="with1.html">
+            <img src="thumb1.jpg" alt="PAC Member thumbnail">
+            Amplifying Student Voices
+          </a>
+        </div>
+        <div class="item">
+          <a href="with2.html">
+            <img src="thumb2.jpg" alt="Cultural Committee thumbnail">
+            Orchestrating Adventures
+          </a>
+        </div>
+        <div class="item">
+          <a href="with3.html">
+            <img src="thumb3.jpg" alt="IFMSA-Utrecht thumbnail">
+            Revitalizing Community
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    fan yang
+  </footer>
+</body>
+</html>
