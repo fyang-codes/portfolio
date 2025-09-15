@@ -63,11 +63,12 @@ function highlightCurrentNavItem() {
 // Helper function to determine the path to the root directory
 function getPathToRoot() {
     const path = window.location.pathname;
-    const depth = (path.match(/\//g) || []).length - 1;
     
-    // If we're at the root already
-    if (depth <= 1) return './';
+    // Check if we're in a project directory
+    if (path.includes('/work/') || path.includes('/with/') || path.includes('/play/')) {
+        return '../';
+    } 
     
-    // Otherwise go up based on folder depth
-    return '../'.repeat(depth - 1);
+    // If we're at the root or in a main section page
+    return './';
 }
